@@ -80,7 +80,7 @@ jobs:
         run: npx playwright install # issue not resolved with pnpm
       - name: Run Playwright tests
         run: cd test/e2e &&  npx playwright test
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
